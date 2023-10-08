@@ -1,13 +1,10 @@
-import {React, StrictMode, createElement} from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import createRoot from "react-dom/client";
+import { render } from "@testing-library/react";
+import App from "./App";
+import React from "react";
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.createRoot(div).render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
+// Test that the App Component renders without crashing
+describe("App", () => {
+  test("renders App component", () => {
+    render(<App />);
+  });
 });

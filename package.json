@@ -11,12 +11,12 @@
     "test": "jest --env=jsdom"
   },
   "dependencies": {
+    "@testing-library/react": "^14.0.0",
     "cross-env": "^7.0.3",
     "jest": "^27.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "react-testing-library": "^8.0.1"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -39,10 +39,10 @@
       "@babel/plugin-transform-runtime"
     ]
   },
-  "jest":{
-    "moduleNameMapper":{
-         "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
-         "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
     }
-}
+  }
 }
