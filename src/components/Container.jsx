@@ -8,7 +8,14 @@ export default function SimpleContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="fixed">
+      <Container 
+        maxWidth="fixed"
+        sx={{
+          backgroundImage: `url("assets/img/fundo.jpg")`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: `300px 300px`
+        }}
+      >
         <QuiltedImageList/>
       </Container>
     </React.Fragment>
